@@ -6,6 +6,7 @@
   "typings": "index.d.ts",
   "scripts": {
     "test": "run-script-os",
+    "postinstall": "cd node_modules/robotjs && npm install && npm run build",
     "test:darwin:linux": "jasmine test/**/*.js",
     "test-keyboard": "node test/keyboard.js",
     "test:win32": "jasmine test/**/*.js",
